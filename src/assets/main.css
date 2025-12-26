@@ -1,0 +1,107 @@
+@import './base.css';
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+} */
+
+#app {
+  /* 移除最大宽度限制 */
+  /* max-width: 1280px; */
+  width: 100%;
+  /* 这个会让导航栏消失，在滚轮下滑到一定一定高度 */
+  /* height: 100vh;  */
+  /* 充满整个视口高度 */
+  margin: 0;
+  /* 移除默认外边距 */
+  padding: 0;
+  /* 移除默认内边距 */
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; 这个是用来等分网格容器的*/
+    /* padding: 0 2rem; */
+  }
+}
+
+nav {
+  /* visibility: hidden; */
+  height: 60px;
+  /* 固定高度更美观 */
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  /* 增强阴影层次感 */
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  /* 启用flex布局 */
+  align-items: center;
+  /* 垂直居中 */
+  background-color: #EFF1FD;
+}
+
+/* 导航链接样式 */
+nav a {
+    /* background-color: #fff; */
+  /* 深紫蓝色，与粉蓝渐变协调 */
+  color: #000000;
+  /* 白色文字，确保清晰可读 */
+  text-decoration: none;
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  /* 平滑过渡 */
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* 悬停背景 */
+  transform: translateY(-2px);
+  /* 轻微上浮效果 */
+}
+
+nav a.class-active {
+  color: #23ADE5;
+  /*  hover时的浅紫蓝，增强交互感 */
+  /* 活跃状态背景色 */
+  font-weight: 2000;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.all {
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+}
