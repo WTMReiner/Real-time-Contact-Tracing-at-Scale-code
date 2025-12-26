@@ -6,7 +6,7 @@
     <div class="video-card" @click="handleCardClick1">
       <!-- 封面区域 -->
       <div class="video-card__cover">
-        <img src="../images/个人轨迹查询.png" alt="{{ title1 }}" class="video-card__image" loading="lazy">
+        <img src="../images/个人轨迹查询.WebP" alt="{{ title1 }}" class="video-card__image" loading="lazy">
       </div>
 
       <!-- 信息区域 -->
@@ -21,7 +21,7 @@
     <div class="video-card" @click="handleCardClick2">
       <!-- 封面区域 -->
       <div class="video-card__cover">
-        <img src="../images/密接人员展示.png" alt="{{ title2 }}" class="video-card__image" loading="lazy">
+        <img src="../images/密接人员展示.WebP" alt="{{ title2 }}" class="video-card__image" loading="lazy">
       </div>
 
       <!-- 信息区域 -->
